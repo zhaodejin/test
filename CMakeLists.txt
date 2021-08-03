@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.2)
+PROJECT(main)
+aux_source_directory(. DIR_SRCS)
+#ADD_EXECUTABLE(LinkList.cpp)
+ADD_EXECUTABLE(${PROJECT_NAME} ${DIR_SRCS})
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} m)
+ADD_COMPILE_OPTIONS(-std=c++11)
